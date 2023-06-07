@@ -1,5 +1,7 @@
+import styles from "./DoubleHeartClick.module.css"
+
 export const DoubleHeartClick = () => {
   return (
-    <div>DoubleHeartClick</div>
+    <div className={styles.container}></div>
   )
 }

@@ -1,5 +1,7 @@
+import styles from "./KineticCSSLoader.module.css"
+
 export const KineticCSSLoader = () => {
   return (
-    <div>KineticCSSLoader</div>
+    <div className={styles.container}></div>
   )
 }

@@ -1,5 +1,7 @@
+import styles from "./DragNDrop.module.css"
+
 export const DragNDrop = () => {
   return (
-    <div>DragNDrop</div>
+    <div className={styles.container}></div>
   )
 }

@@ -1,5 +1,7 @@
+import styles from "./GitHubProfiles.module.css"
+
 export const GitHubProfiles = () => {
   return (
-    <div>GitHubProfiles</div>
+    <div className={styles.container}></div>
   )
 }

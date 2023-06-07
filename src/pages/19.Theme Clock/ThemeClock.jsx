@@ -1,5 +1,7 @@
+import styles from "./ThemeClock.module.css"
+
 export const ThemeClock = () => {
   return (
-    <div>ThemeClock</div>
+    <div className={styles.container}></div>
   )
 }

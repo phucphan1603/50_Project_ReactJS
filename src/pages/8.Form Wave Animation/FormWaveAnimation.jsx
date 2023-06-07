@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import styles from "./FormWaveAnimation.module.css";
 
 // eslint-disable-next-line react/prop-types
@@ -24,6 +25,11 @@ const InputWave = ({ label, type = "text", required = false, id = "" }) => {
 };
 
 export const FormWaveAnimation = () => {
+
+  useEffect(() => {
+    document.title = "Form Wave Animation"
+  },[])
+
   return (
     <div className={styles.wrapper}>
       <div className={styles.container}>

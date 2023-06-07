@@ -1,5 +1,7 @@
+import styles from "./AnimatedNavigation.module.css"
+
 export const AnimatedNavigation = () => {
   return (
-    <div>AnimatedNavigation</div>
+    <div className={styles.container}></div>
   )
 }

@@ -1,5 +1,7 @@
+import styles from "./IncrementCounter.module.css"
+
 export const IncrementCounter = () => {
   return (
-    <div>IncrementCounter</div>
+    <div className={styles.container}></div>
   )
 }

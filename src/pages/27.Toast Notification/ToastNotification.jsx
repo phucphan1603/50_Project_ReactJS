@@ -1,5 +1,7 @@
+import styles from "./ToastNotification.module.css"
+
 export const ToastNotification = () => {
   return (
-    <div>ToastNotification</div>
+    <div className={styles.container}></div>
   )
 }

@@ -1,5 +1,7 @@
+import styles from "./ContentPlaceholder.module.css"
+
 export const ContentPlaceholder = () => {
   return (
-    <div>ContentPlaceholder</div>
+    <div className={styles.container}></div>
   )
 }

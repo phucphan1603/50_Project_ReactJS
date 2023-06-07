@@ -1,5 +1,7 @@
+import styles from "./ButtonRippleEffect.module.css"
+
 export const ButtonRippleEffect = () => {
   return (
-    <div>ButtonRippleEffect</div>
+    <div className={styles.container}></div>
   )
 }

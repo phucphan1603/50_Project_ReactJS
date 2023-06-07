@@ -1,5 +1,7 @@
+import styles from "./BackgroundSlider.module.css"
+
 export const BackgroundSlider = () => {
   return (
-    <div>BackgroundSlider</div>
+    <div className={styles.container}></div>
   )
 }

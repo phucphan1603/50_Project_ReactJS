@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import styles from "./ExpandingCard.module.css";
+import { BlurryLoading } from "../5.Blurry Loading/BlurryLoading";
 
 const listImages = [
   {
@@ -55,8 +56,8 @@ export const ExpandingCard = () => {
               className={`${styles.panel} ${
                 image.id === activeImage ? styles.active : ""
               }`}
-              style={{ backgroundImage: `url(${image.img})` }}
             >
+              <BlurryLoading image={image.img}/>
               <h3>{image.name}</h3>
             </div>
           );

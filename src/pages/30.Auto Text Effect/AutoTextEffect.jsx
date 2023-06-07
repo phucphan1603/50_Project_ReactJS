@@ -1,5 +1,7 @@
+import styles from "./AutoTextEffect.module.css"
+
 export const AutoTextEffect = () => {
   return (
-    <div>AutoTextEffect</div>
+    <div className={styles.container}></div>
   )
 }

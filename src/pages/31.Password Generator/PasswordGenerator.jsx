@@ -1,5 +1,7 @@
+import styles from "./PasswordGenerator.module.css"
+
 export const PasswordGenerator = () => {
   return (
-    <div>PasswordGenerator</div>
+    <div className={styles.container}></div>
   )
 }

@@ -1,5 +1,7 @@
+import styles from "./DoubleVerticalSlider.module.css"
+
 export const DoubleVerticalSlider = () => {
   return (
-    <div>DoubleVerticalSlider</div>
+    <div className={styles.container}></div>
   )
 }

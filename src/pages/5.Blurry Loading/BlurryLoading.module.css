@@ -3,20 +3,52 @@
   align-items: center;
   justify-content: center;
   height: 100%;
+  max-width: 100%;
 }
 
-.bg {
-  background: url("https://picsum.photos/1000") no-repeat center center/cover;
+
+.blurred_img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.blurred_img::before {
+  content: "";
   position: absolute;
-  top: -30px;
-  left: -30px;
-  width: calc(100vw + 30px);
-  height: calc(100vh + 30px);
-  z-index: -1;
-  filter: blur(0px);
+  inset: 0;
+  opacity: 0;
+  animation: pulse 2.5s infinite;
+  background-color: rgb(98, 104, 112);;
 }
 
-.loading_text {
-  font-size: 50px;
-  color: #fff;
+@keyframes pulse {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.blurred_img.loaded::before {
+  animation: none;
+  content: none;
+}
+
+.blurred_img img {
+  opacity: 0;
+  transition: opacity 250ms ease-in-out;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.blurred_img.loaded img {
+  opacity: 1;
 }

@@ -20,6 +20,7 @@
   margin: 10px;
   position: relative;
   transition: width 0.3s ease-in;
+  overflow: hidden;
 }
 
 .panel h3 {

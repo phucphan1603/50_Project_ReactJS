@@ -1,7 +1,12 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import styles from "./SplitLadingPage.module.css";
 
 export const SplitLadingPage = () => {
+
+  useEffect(() => {
+    document.title = "Split Lading Page"
+  },[])
+
   const [hoverPosition, setHoverPosition] = useState("");
 
   return (
@@ -23,9 +28,9 @@ export const SplitLadingPage = () => {
         }}
         className={`${styles.split} ${styles.left} `}
       >
-        <h1 className={styles.title}>Playstation 5</h1>
+        <h1 className={styles.title}>Left Content</h1>
         <a href="#" className={styles.btn}>
-          Buy Now
+          Details
         </a>
       </div>
 
@@ -38,9 +43,9 @@ export const SplitLadingPage = () => {
         }}
         className={`${styles.split} ${styles.right}`}
       >
-        <h1 className={styles.title}>XBox Series X</h1>
+        <h1 className={styles.title}>Right Content</h1>
         <a href="#" className={styles.btn}>
-          Buy Now
+          Details
         </a>
       </div>
     </div>

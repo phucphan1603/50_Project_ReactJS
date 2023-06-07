@@ -1,5 +1,7 @@
+import styles from "./StickyNavbar.module.css"
+
 export const StickyNavbar = () => {
   return (
-    <div>StickyNavbar</div>
+    <div className={styles.container}></div>
   )
 }
